@@ -7,3 +7,8 @@
         --both: #6B7280;
     }
 }
+@layer components{
+    .menuli{
+        @apply hover:underline hover:underline-offset-2 hover:decoration-2 active:underline active:underline-offset-2 active:decoration-2 active:border-2 active:border-dashed focus:border-2 focus:border-dashed transform scale-100 py-2 px-1
+    }
+}
