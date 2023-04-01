@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="lofi">
-    <!-- data-theme="forest" -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +7,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/setting.css">
     <title>Microsoft – Cloud, computers, apps and games</title>
+    <style>html, body{scroll-behavior: smooth;}</style>
 </head>
-<body class="h-[3000px]">
+<body>
     <!-- initialize menu -->
-    <div class="w-full font-segoe text-[13px] px-5 lg:px-20 flex justify-between items-center py-2">
+    <div id="up" class="w-full font-segoe text-[13px] px-5 lg:px-20 flex justify-between items-center py-2">
         <!-- initialize left nav -->
         <div class="main1">
             <div class="flex justify-center items-center gap-7">
@@ -26,7 +26,7 @@
                         <li class="menuli"><a href="#">Special&nbsp;offers</a></li>
                         <li class="more menuli relative pr-5">
                             <a class="relative after:content-['>'] after:absolute after:-right-5 after:top-2 after:text-[#262626] after:w-4 after:h-4 after:rotate-90" href="#">More</a>
-                            <ul  class="hidden absolute top-full dropdown-content menu p-2 shadow bg-both rounded-box w-52 border-b-2 border-[#000] border-solid z-50">
+                            <ul  class="hidden absolute top-full dropdown-content menu p-2 shadow bg-base-300 rounded-box w-52 border-b-2 border-[#000] border-solid z-50">
                                 <li class="leftMenuli p-0"><a>Small and medium-sized bussinesses</a></li>
                                 <li class="leftMenuli p-0"><a>Support</a></li>
                               </ul>
@@ -43,7 +43,7 @@
                     <ul class="flex gap-5 mt-5">
                         <li class="everything menuli relative pr-5">
                             <a class="relative after:content-['>'] after:absolute after:-right-5 after:top-2 after:text-[#262626] after:w-4 after:h-4 after:rotate-90" href="#">Everything&nbsp;From&nbsp;Microsoft</a>                      
-                            <ul  class="hidden fixed top-16 right-10 lg:right-14 ml-10 dropdown-content menu w-auto px-5 py-3 shadow bg-both rounded-box border-b-2 border-[#000] border-solid z-50">
+                            <ul  class="hidden fixed top-16 right-10 lg:right-14 ml-10 dropdown-content menu w-auto px-5 py-3 shadow bg-base-300 rounded-box border-b-2 border-[#000] border-solid z-50">
                                <div class="flex flex-col">
                                 <div class="flex justify-start items-center gap-20 flex-wrap">
                                     <li class="p-0 flex flex-col items-start justify-center">
@@ -140,7 +140,7 @@
     </div>
     <!-- end menu -->   
     <!-- initialize carousel xxl -->
-    <div class=" hidden lg:block">
+    <div class="hidden lg:block">
         <div class="flex flex-col items-center">
             <div class=" carousel w-full mt-4 rounded h-[500px]">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -213,8 +213,231 @@
         </div>
     </div>
     <!-- end carousel lg -->
-
-
+    <!-- initialize zir carousel -->
+    <div class="flex justify-center items-center mt-16 gap-x-14 gap-y-5 mx-10 flex-wrap">
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir1.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">Choose&nbsp;your&nbsp;Microsoft&nbsp;365</a></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir2.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">Go&nbsp;to&nbsp;Surface&nbsp;store</a></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir3.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">Go&nbsp;to&nbsp;Xbox&nbsp;store</a></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir1.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">Download&nbsp;windows&nbsp;11</a></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir5.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">View&nbsp;all&nbsp;accessories</a></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+            <div><img src="./images/zir6.webp" alt="1"></div>
+            <div><a class="underline underline-offset-2 text-info font-segoe text-base font-semibold cursor-pointer">Buy&nbsp;for&nbsp;business</a></div>
+        </div>
+    </div>
+    <!-- end zir carousel -->
+    <!-- initialize card -->
+    <div class="flex justify-center items-start gap-5 mt-20 mx-5 lg:mx-14 flex-wrap">
+        <div class="card w-80 bg-base-100">
+            <figure><img src="./images/card1.webp" alt="Shoes" /></figure>
+            <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+              <p class="bg-warning text-[#000] py-1 px-3 text-base font-segoe">New</p>
+              <h2 class="card-title font-segoe text-3xl">Surface Laptop 5</h2>
+              <p class="font-segoe text-base">Streamlined portability and multitasking speed, powered by a 12th generation Intel® Core, with Windows 11.</p>
+              <div class="card-actions justify-end">
+                <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Buy now </p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+              </div>
+            </div>
+        </div>
+        <div class="card w-80 bg-base-100">
+            <figure><img src="./images/card2.webp" alt="Shoes" /></figure>
+            <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+              <h2 class="card-title font-segoe text-3xl mt-10">Surface Laptop Studio</h2>
+              <p class="font-segoe text-base">Unleash your creative powers on the most powerful Surface Laptop. Now available with Windows 11.</p>
+              <div class="card-actions justify-end">
+                <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Buy now </p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+              </div>
+            </div>
+        </div>
+        <div class="card w-80 bg-base-100">
+            <figure><img src="./images/card3.avif" alt="Shoes" /></figure>
+            <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+              <h2 class="card-title font-segoe text-3xl mt-3">Xbox Series X – Diablo® IV Bundle</h2>
+              <p class="font-segoe text-base">Join the endless battle with a bundle consisting of the fastest and most powerful Xbox ever and the latest Diablo® version.</p>
+              <div class="card-actions justify-end">
+                <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Reverse the bundle now</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+              </div>
+            </div>
+        </div>
+        <div class="card w-80 bg-base-100">
+            <figure><img src="./images/card4.webp" alt="Shoes" /></figure>
+            <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+              <h2 class="card-title font-segoe text-3xl mt-10">New release: Resident Evil 4</h2>
+              <p class="font-segoe text-base">Big discounts when purchased in combination with an Xbox Series S</p>
+              <div class="card-actions justify-end">
+                <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Buy Xbox Series S</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card -->
+    <!-- initialize pro -->
+    <div class="mt-16 relative w-[95%] mx-5 lg:mx-10 h-[473px]">
+        <img class="h-[inherit] w-full hidden lg:block" src="./images/pro.jpg" alt="5">
+        <img class="h-[inherit] w-full block lg:hidden" src="./images/pro2.avif" alt="5">
+        <div class="absolute lg:w-[420px] w-[97%] lg:mt-0 lg:left-32 left-3 top-[90%] lg:top-32 lg:shadow-none shadow-lg p-5 lg:bg-transparent bg-[#fff]">
+            <div class="flex flex-col items-start justify-center gap-5">
+                <p class="font-segoe text-4xl font-bold text-[#000]">Play like a pro</p>
+                <p class="font-segoe text-base text-[#000]">Play your best game with the Xbox Elite Wireless Controller Series 2 – Core. Now also available in Blue and Red.</p>
+                <button class="btn btn-info hover:opacity-80">Reverse a controller now</button>
+            </div>
+        </div>
+    </div>
+    <!-- end pro -->
+    <!-- initialize card2 -->
+    <div class="flex flex-col items-start justify-center gap-7 mx-5 lg:mx-14 mt-60 lg:mt-20">
+        <div><p class="font-segoe text-4xl font-bold">For companies</p></div>
+        <div class="flex justify-center items-start gap-x-10 flex-wrap">
+            <div class="card w-80 bg-base-100">
+                <figure><img src="./images/card5.webp" alt="Shoes" /></figure>
+                <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+                  <h2 class="card-title font-segoe text-3xl">Deals on select Surface for Business</h2>
+                  <p class="font-segoe text-base">Don't miss our deals on select Surface Laptop 5 and Surface Pro 9 devices.</p>
+                  <div class="card-actions justify-end">
+                    <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Surface Laptop 5</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+                  </div>
+                </div>
+            </div>
+            <div class="card w-80 bg-base-100">
+                <figure><img src="./images/card6.webp" alt="Shoes" /></figure>
+                <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+                  <h2 class="card-title font-segoe text-3xl">Download Microsoft Teams for free</h2>
+                  <p class="font-segoe text-base mt-3">Online meetings, chat, and shared cloud storage all in one place.</p>
+                  <div class="card-actions justify-end">
+                    <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Register for free</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+                  </div>
+                </div>
+            </div>
+            <div class="card w-80 bg-base-100">
+                <figure><img src="./images/card7.webp" alt="Shoes" /></figure>
+                <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+                  <h2 class="card-title font-segoe text-3xl mt-3">Visual Studio 2022</h2>
+                  <p class="font-segoe text-base">Download the most comprehensive IDE for .NET and C++ developers on Windows to build web, cloud, desktop, and mobile apps, services, and games.</p>
+                  <div class="card-actions justify-end">
+                    <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">Reverse the bundle now</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+                  </div>
+                </div>
+            </div>
+            <div class="card w-80 bg-base-100">
+                <figure><img src="./images/card4.webp" alt="Shoes" /></figure>
+                <div class="card-body flex flex-col items-start justify-center p-0 pt-4">
+                  <h2 class="card-title font-segoe text-3xl">Windows 11 for business</h2>
+                  <p class="font-segoe text-base">Specially aimed at hybrid working. Powerful for the employees. Consistent for IT. Safe for everyone.</p>
+                  <div class="card-actions justify-end">
+                    <a class="text-info font-semibold flex items-center group"><p class="group-hover:underline">More information</p><span class="text-[35px] font-normal pl-2 group-hover:no-underline group-hover:translate-x-1 transition-all duration-500 mb-2">&rsaquo;</span></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card2 -->
+    <!-- initialize up -->
+    <div class="sticky left-[1360px] bottom-5 w-36 mt-10">
+        <a href="#up" class="font-segoe text-base py-2 px-4 font-bold flex bg-base-300 hover:bg-[#fff] shrink shadow-lg"><span class="text-[20px] font-bold mr-2">&uarr;</span> Back upstairs</a>
+    </div>
+    <!-- end up -->
+    <!-- initialize theme -->
+    <div class="sticky bottom-3 left-5 dropdown dropdown-hover z-50">
+        <label tabindex="0" class="btn m-1 font-segoe font-bold text-base bg-gradient-to-tr from-both via-primary to-info">Themes</label>
+        <ul tabindex="0" class="font-segoe -top-[292px] dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li class="my-1 lofi"><a class="bg-[#fff] text-[#000] hover:opacity-80">LOfi</a></li>
+          <li class="my-1 forest"><a class="bg-[#000] text-[#fff] hover:opacity-80">Forest</a></li>
+          <li class="my-1 synthwave"><a class="bg-[#2D1B69] text-[#fff] hover:opacity-80">Synthwave</a></li>
+          <li class="my-1 retro"><a class="bg-[#E4D8B4] text-[#000] hover:opacity-80">Retro</a></li>
+          <li class="my-1 valentine"><a class="bg-[#F0D6E8] text-[#000] hover:opacity-80">Valentine</a></li>
+        </ul>
+      </div>
+    <!-- end theme -->
+    <!-- initialize footer -->
+    <footer class="footer p-10 bg-base-200 text-base-content mt-16 relative">
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">New</span> 
+          <a class="link link-hover">Surface Pro 9</a> 
+          <a class="link link-hover">Surface Laptop 5</a> 
+          <a class="link link-hover">Surface Studio 2+</a> 
+          <a class="link link-hover">Surface Laptop Go 2</a>
+          <a class="link link-hover">Surface Laptop Studio</a>
+          <a class="link link-hover">Microsoft 365</a>
+          <a class="link link-hover">Windows 11 apps</a>
+        </div> 
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">Microsoft Store</span> 
+          <a class="link link-hover">Account profile</a> 
+          <a class="link link-hover">Download Center</a> 
+          <a class="link link-hover">Support Microsoft Store</a> 
+          <a class="link link-hover">Returns</a>
+          <a class="link link-hover">Track order</a>
+          <a class="link link-hover">Recycling</a>
+          <a class="link link-hover">Commercial Warranties</a>
+        </div> 
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">Education</span> 
+          <a class="link link-hover">Microsoft Education</a> 
+          <a class="link link-hover">Devices for education</a> 
+          <a class="link link-hover">Microsoft Teams for Education</a>
+          <a class="link link-hover">Microsoft 365 Education</a>
+          <a class="link link-hover">OfficeEducation</a>
+          <a class="link link-hover">Educator training and development</a>
+          <a class="link link-hover">Offers for students and parents</a>
+          <a class="link link-hover">Azure for students</a>
+        </div>
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">Commercial</span> 
+          <a class="link link-hover">Microsoft Cloud</a> 
+          <a class="link link-hover">Microsoft Security</a> 
+          <a class="link link-hover">Azure</a>
+          <a class="link link-hover">Dynamics 365</a>
+          <a class="link link-hover">Microsoft 365</a>
+          <a class="link link-hover">Microsoft Industry</a>
+          <a class="link link-hover">Microsoft Teams</a>
+          <a class="link link-hover">Small and medium-sized businesses</a>
+        </div>
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">Developer and IT</span> 
+          <a class="link link-hover">Developer Center</a> 
+          <a class="link link-hover">Documentation</a> 
+          <a class="link link-hover">Microsoft Learn</a>
+          <a class="link link-hover">Microsoft Tech Community</a>
+          <a class="link link-hover">Azure Marketplace</a>
+          <a class="link link-hover">AppSource</a>
+          <a class="link link-hover">Microsoft PowerPlatform</a>
+          <a class="link link-hover">VisualStudio</a>
+        </div>
+        <div class="font-segoe text-[11px]">
+          <span class="footer-title text-[15px]">Company</span> 
+          <a class="link link-hover">Vacancies</a> 
+          <a class="link link-hover">Privacy at Microsoft</a> 
+          <a class="link link-hover">Investors</a>
+          <a class="link link-hover">Sustainability</a>
+        </div>
+        <div class="absolute top-full w-full left-0 bg-base-200 text-base-content flex justify-end font-segoe text-[11px] gap-7 px-10 pb-5">
+            <a class="link link-hover">Contact Microsoft</a>
+            <a class="link link-hover">Privacy</a>
+            <a class="link link-hover">Manage cookies</a>
+            <a class="link link-hover">Terms of Use</a>
+            <a class="link link-hover">Trademarks</a>
+            <a class="link link-hover">About our advertisements</a>
+            <a class="link link-hover">EU Compliance DoCs</a>
+            <a class="link link-hover">©Microsoft 2023</a>
+            
+        </div>
+      </footer>
+    <!-- end footer -->
     <script>
         // leftnav > more
         document.querySelector("li.more").addEventListener("click",function(){
@@ -234,6 +457,46 @@
             document.querySelector("div.main1").classList.remove("hidden")
             document.querySelector("div.main2").classList.remove("hidden")
             document.querySelector("div.search").classList.add("hidden")
+        })
+        // themes
+        document.querySelector("li.lofi").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","lofi")
+            // document.firstElementChild.removeAttribute("data-theme","forest")
+            // document.firstElementChild.removeAttribute("data-theme","synthwave")
+            // document.firstElementChild.removeAttribute("data-theme","retro")
+            // document.firstElementChild.removeAttribute("data-theme","valentine")
+        })
+        document.querySelector("li.forest").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","forest")
+            // document.firstElementChild.removeAttribute("data-theme","lofi")
+            // document.firstElementChild.removeAttribute("data-theme","synthwave")
+            // document.firstElementChild.removeAttribute("data-theme","retro")
+            // document.firstElementChild.removeAttribute("data-theme","valentine")
+
+        })
+        document.querySelector("li.synthwave").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","synthwave")
+            // document.firstElementChild.removeAttribute("data-theme","lofi")
+            // document.firstElementChild.removeAttribute("data-theme","forest")   
+            // document.firstElementChild.removeAttribute("data-theme","retro")
+            // document.firstElementChild.removeAttribute("data-theme","valentine")
+
+        })
+        document.querySelector("li.retro").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","retro")            
+            // document.firstElementChild.removeAttribute("data-theme","lofi")
+            // document.firstElementChild.removeAttribute("data-theme","forest")
+            // document.firstElementChild.removeAttribute("data-theme","synthwave")
+            // document.firstElementChild.removeAttribute("data-theme","valentine")
+
+        })
+        document.querySelector("li.valentine").addEventListener("click",function(){
+            document.firstElementChild.setAttribute("data-theme","valentine")              
+            // document.firstElementChild.removeAttribute("data-theme","lofi")
+            // document.firstElementChild.removeAttribute("data-theme","forest")
+            // document.firstElementChild.removeAttribute("data-theme","synthwave")
+            // document.firstElementChild.removeAttribute("data-theme","retro")
+            
         })
     </script>
 </body>
