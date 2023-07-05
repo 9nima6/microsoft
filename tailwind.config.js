@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     colors: {
       both: "var(--both)",
+      accordion: "var(--accordion)",
     },
     fontFamily: {
       segoe: "segoe",
